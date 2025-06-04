@@ -19,6 +19,14 @@ const PriceListSection = () => {
           <Button
             className="bg-green-600 hover:bg-green-700 text-white px-8 py-3"
             size="lg"
+            onClick={() => {
+              const link = document.createElement("a");
+              link.href = "/price-list-2024.pdf";
+              link.download = "price-list-2024.pdf";
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }}
           >
             <Icon name="FileDown" size={20} />
             Скачать прайс (.pdf)
