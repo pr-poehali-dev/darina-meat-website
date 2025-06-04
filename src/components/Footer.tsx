@@ -78,11 +78,11 @@ const Footer = () => {
             <div className="space-y-3 text-sm text-gray-400">
               <div className="flex items-center space-x-3">
                 <Icon name="Phone" size={16} />
-                <span>+7 (8442) 123-456</span>
+                <span>8(83159)30126</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Icon name="Mail" size={16} />
-                <span>info@amedivolga.ru</span>
+                <span>ekosteeva@bk.ru</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Icon name="MapPin" size={16} />

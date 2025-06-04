@@ -13,20 +13,20 @@ const Contact = () => {
     {
       icon: "Phone",
       title: "Телефон",
-      content: "+7 (8442) 123-456",
-      detail: "Отдел продаж: +7 (8442) 123-457",
+      content: "8(83159)30126",
+      detail: "Мобильный: 8-951-910-79-80",
     },
     {
       icon: "Mail",
       title: "Email",
-      content: "info@amedivolga.ru",
-      detail: "sales@amedivolga.ru",
+      content: "ekosteeva@bk.ru",
+      detail: "",
     },
     {
       icon: "Clock",
       title: "Режим работы",
-      content: "Пн-Пт: 8:00 - 18:00",
-      detail: "Сб: 9:00 - 15:00",
+      content: "Пн-Пт: 9:00 - 17:00",
+      detail: "Сб и Вс: выходной",
     },
   ];
 
