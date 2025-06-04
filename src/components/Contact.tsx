@@ -25,7 +25,7 @@ const Contact = () => {
     {
       icon: "MessageCircle",
       title: "Telegram бот",
-      content: "t.me/Amedy_bot",
+      content: "https://t.me/Amedy_bot",
       detail: "Быстрые ответы на вопросы",
     },
     {
