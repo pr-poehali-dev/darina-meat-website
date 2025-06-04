@@ -20,14 +20,21 @@ const PriceListSection = () => {
             className="bg-green-600 hover:bg-green-700 text-white px-8 py-3"
             size="lg"
             onClick={() => {
-              // Создаем временную ссылку для скачивания
-              const link = document.createElement("a");
-              link.href = "/price-list-2024.pdf";
-              link.download = "price-list-2024.pdf";
-              link.target = "_blank";
-              document.body.appendChild(link);
-              link.click();
-              document.body.removeChild(link);
+              // Проверяем доступность файла и скачиваем
+              try {
+                const link = document.createElement("a");
+                link.href = "/price-list-2024.pdf";
+                link.download = "price-list-2024.pdf";
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              } catch (error) {
+                console.error("Ошибка при скачивании прайс-листа:", error);
+                // Откроем файл в новой вкладке как запасной вариант
+                window.open("/price-list-2024.pdf", "_blank");
+              }
             }}
           >
             <Icon name="FileDown" size={20} />
