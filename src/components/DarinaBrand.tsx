@@ -93,8 +93,8 @@ const DarinaBrand = () => {
               <CardContent className="p-0">
                 <div className="relative">
                   <img
-                    src="https://images.unsplash.com/photo-1606909924998-93d5bbaa9b73?w=600&h=600&fit=crop&auto=format"
-                    alt="Продукция торговой марки Дарина"
+                    src="https://cdn.poehali.dev/files/c033b586-9c11-4b60-9da8-b1404c1883ea.jpg"
+                    alt="Каталог продукции торговой марки Дарина"
                     className="w-full h-96 object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
