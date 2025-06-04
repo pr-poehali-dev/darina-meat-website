@@ -330,153 +330,288 @@ const DarinaBrand = () => {
               График поставок по населенным пунктам
             </h3>
             <p className="text-gray-600">
-              Регулярные поставки свежей продукции во все точки региона
+              Регулярные поставки свежей продукции по Нижегородской области и
+              близлежащим регионам
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {[
               {
-                city: "Москва и область",
-                days: ["Понедельник", "Четверг"],
-                time: "08:00 - 12:00",
-                color: "blue",
-                routes: ["МКАД", "Подольск", "Химки"],
-              },
-              {
-                city: "Санкт-Петербург",
-                days: ["Вторник", "Пятница"],
-                time: "09:00 - 13:00",
-                color: "green",
-                routes: ["Центр", "Васильевский о.", "Петроградка"],
-              },
-              {
                 city: "Нижний Новгород",
-                days: ["Среда"],
-                time: "10:00 - 14:00",
+                days: "Ежедневно кроме воскресенья",
+                color: "blue",
+                special: false,
+              },
+              {
+                city: "Арзамас",
+                days: "Понедельник, Четверг",
+                color: "green",
+                special: false,
+              },
+              {
+                city: "Лукоянов",
+                days: "Понедельник, Четверг",
                 color: "purple",
-                routes: ["Автозавод", "Сормово", "Канавино"],
+                special: false,
+              },
+              {
+                city: "Перевоз",
+                days: "Понедельник, Четверг",
+                color: "orange",
+                special: false,
+              },
+              {
+                city: "Саранск",
+                days: "Вторник, Пятница",
+                color: "red",
+                special: false,
+              },
+              {
+                city: "Первомайск",
+                days: "Понедельник, Четверг",
+                color: "indigo",
+                special: false,
+              },
+              {
+                city: "Балахна",
+                days: "Понедельник, Среда, Пятница",
+                color: "pink",
+                special: false,
+              },
+              {
+                city: "Городец",
+                days: "Вторник, Пятница",
+                color: "teal",
+                special: false,
+              },
+              {
+                city: "Заволжье",
+                days: "Вторник, Пятница",
+                color: "cyan",
+                special: false,
+              },
+              {
+                city: "Богородск",
+                days: "Вторник, Пятница",
+                color: "emerald",
+                special: false,
+              },
+              {
+                city: "Павлово",
+                days: "Вторник, Четверг, Суббота",
+                color: "violet",
+                special: false,
+              },
+              {
+                city: "Сосновское",
+                days: "Вторник, Четверг, Суббота",
+                color: "amber",
+                special: false,
+              },
+              {
+                city: "Муром",
+                days: "Пн-Пт",
+                color: "lime",
+                special: false,
+              },
+              {
+                city: "Вача",
+                days: "Среда, Суббота",
+                color: "rose",
+                special: false,
+              },
+              {
+                city: "Выкса",
+                days: "Понедельник, Четверг",
+                color: "sky",
+                special: false,
+              },
+              {
+                city: "Новашино",
+                days: "Понедельник, Четверг",
+                color: "yellow",
+                special: false,
+              },
+              {
+                city: "Кулебаки",
+                days: "Понедельник, Четверг",
+                color: "fuchsia",
+                special: false,
+              },
+              {
+                city: "Дзержинск",
+                days: "Ежедневно кроме воскресенья",
+                color: "blue",
+                special: false,
+              },
+              {
+                city: "Мулино",
+                days: "Понедельник, Среда, Пятница",
+                color: "green",
+                special: false,
+              },
+              {
+                city: "Кстово",
+                days: "Ежедневно кроме воскресенья",
+                color: "purple",
+                special: false,
+              },
+              {
+                city: "Лысково",
+                days: "Вторник, Четверг, Суббота",
+                color: "orange",
+                special: false,
+              },
+              {
+                city: "Дружный",
+                days: "Понедельник, Среда, Пятница",
+                color: "red",
+                special: false,
+              },
+              {
+                city: "Зеленый город",
+                days: "Понедельник, Среда, Пятница",
+                color: "indigo",
+                special: false,
+              },
+              {
+                city: "Запрудное, Подлесово",
+                days: "Вторник, Четверг, Суббота",
+                color: "pink",
+                special: false,
+              },
+              {
+                city: "Чернуха",
+                days: "Понедельник, Среда, Пятница",
+                color: "teal",
+                special: false,
+              },
+              {
+                city: "Линда",
+                days: "Вторник, Пятница",
+                color: "cyan",
+                special: false,
+              },
+              {
+                city: "Семенов",
+                days: "Вторник, Пятница",
+                color: "emerald",
+                special: false,
+              },
+              {
+                city: "Воскресенское",
+                days: "Вторник",
+                color: "violet",
+                special: false,
+              },
+              {
+                city: "Спасское, Чистое поле",
+                days: "Пятница",
+                color: "amber",
+                special: false,
+              },
+              {
+                city: "Беласовка, Керженец",
+                days: "Вторник, Пятница",
+                color: "lime",
+                special: false,
+              },
+              {
+                city: "Бор",
+                days: "Ежедневно кроме воскресенья",
+                color: "rose",
+                special: false,
+              },
+              {
+                city: "ППК",
+                days: "Среда, Пятница к 14:00",
+                color: "sky",
+                special: false,
+              },
+              {
+                city: "Чебоксары",
+                days: "По заявке",
+                color: "yellow",
+                special: true,
+                note: "При условии сбора заказов на целую машину 5000кг",
+              },
+              {
+                city: "Йошкар-Ола",
+                days: "По заявке",
+                color: "fuchsia",
+                special: true,
+                note: "При условии сбора заказов на целую машину 5000кг",
+              },
+              {
+                city: "Иваново",
+                days: "Среда, Воскресенье",
+                color: "blue",
+                special: false,
+              },
+              {
+                city: "Чкаловск",
+                days: "Среда",
+                color: "green",
+                special: false,
               },
               {
                 city: "Казань",
-                days: ["Понедельник"],
-                time: "11:00 - 15:00",
-                color: "orange",
-                routes: ["Вахитовский", "Советский", "Приволжский"],
-              },
-              {
-                city: "Воронеж",
-                days: ["Четверг"],
-                time: "08:30 - 12:30",
-                color: "red",
-                routes: ["Центр", "Левобережный", "Железнодорожный"],
-              },
-              {
-                city: "Ростов-на-Дону",
-                days: ["Вторник"],
-                time: "09:30 - 13:30",
-                color: "indigo",
-                routes: ["Ленинский", "Октябрьский", "Пролетарский"],
-              },
-              {
-                city: "Екатеринбург",
-                days: ["Среда"],
-                time: "08:00 - 12:00",
-                color: "pink",
-                routes: ["Центр", "Верх-Исетский", "Чкаловский"],
-              },
-              {
-                city: "Самара",
-                days: ["Пятница"],
-                time: "10:00 - 14:00",
-                color: "teal",
-                routes: ["Ленинский", "Октябрьский", "Советский"],
+                days: "Вторник",
+                color: "purple",
+                special: false,
               },
             ].map((delivery, index) => (
               <div
                 key={index}
-                className={`p-6 rounded-lg border-l-4 border-${delivery.color}-500 bg-${delivery.color}-50 hover:shadow-md transition-shadow`}
+                className={`p-4 rounded-lg border-l-4 border-${delivery.color}-500 bg-${delivery.color}-50 hover:shadow-md transition-shadow`}
               >
-                <div className="flex items-center justify-between mb-4">
-                  <h4 className="font-bold text-gray-900 text-lg">
+                <div className="mb-3">
+                  <h4 className="font-bold text-gray-900 text-sm mb-1">
                     {delivery.city}
                   </h4>
-                  <div
-                    className={`w-4 h-4 rounded-full bg-${delivery.color}-500`}
-                  ></div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="space-y-2">
-                    <div className="flex items-center space-x-2">
-                      <Icon
-                        name="Calendar"
-                        size={16}
-                        className={`text-${delivery.color}-600`}
-                      />
-                      <span className="font-semibold text-gray-700">
-                        Дни поставок:
-                      </span>
-                    </div>
-                    <div className="pl-6">
-                      {delivery.days.map((day, dayIndex) => (
-                        <div
-                          key={dayIndex}
-                          className={`inline-block bg-${delivery.color}-100 text-${delivery.color}-800 px-2 py-1 rounded text-xs font-medium mr-2 mb-1`}
-                        >
-                          {day}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
                   <div className="flex items-center space-x-2">
                     <Icon
                       name="Clock"
-                      size={16}
-                      className={`text-${delivery.color}-600`}
+                      size={14}
+                      className={`text-${delivery.color}-500 flex-shrink-0`}
                     />
-                    <span className="text-gray-600 font-medium">
-                      {delivery.time}
+                    <span className="text-xs text-gray-700 font-medium">
+                      {delivery.days}
                     </span>
                   </div>
-
-                  <div className="space-y-2">
-                    <div className="flex items-center space-x-2">
+                  {delivery.special && delivery.note && (
+                    <div className="mt-2 p-2 bg-yellow-100 rounded text-xs text-yellow-800">
                       <Icon
-                        name="MapPin"
-                        size={16}
-                        className={`text-${delivery.color}-600`}
+                        name="AlertTriangle"
+                        size={12}
+                        className="inline mr-1"
                       />
-                      <span className="font-semibold text-gray-700">
-                        Районы:
-                      </span>
+                      {delivery.note}
                     </div>
-                    <div className="pl-6 text-sm text-gray-600">
-                      {delivery.routes.join(" • ")}
-                    </div>
-                  </div>
+                  )}
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="mt-8 p-6 bg-orange-50 rounded-lg">
+          <div className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg">
             <div className="flex items-start space-x-3">
               <Icon
                 name="Info"
                 size={20}
-                className="text-orange-600 mt-1 flex-shrink-0"
+                className="text-blue-500 flex-shrink-0 mt-0.5"
               />
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">
-                  Условия поставок
+                <h4 className="font-bold text-gray-900 mb-2">
+                  Важная информация
                 </h4>
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Минимальный заказ от 50 000 рублей</li>
-                  <li>• Предварительная заявка за 2 рабочих дня</li>
-                  <li>• Возможна корректировка времени доставки</li>
-                  <li>• Экстренные поставки по согласованию</li>
+                  <li>• Время доставки уточняйте у менеджера</li>
+                  <li>• Возможна корректировка графика в праздничные дни</li>
+                  <li>
+                    • Минимальная сумма заказа может варьироваться по регионам
+                  </li>
                 </ul>
               </div>
             </div>
