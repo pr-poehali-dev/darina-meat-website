@@ -96,9 +96,9 @@ const About = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=400&fit=crop&auto=format"
-                alt="Производство мясных изделий"
-                className="rounded-xl shadow-lg w-full"
+                src="https://cdn.poehali.dev/files/cc61a163-cd31-4f41-9453-5163e3e9e63d.png"
+                alt="Производство мясных продуктов"
+                className="w-full h-[400px] object-cover rounded-xl shadow-lg"
               />
             </div>
           </div>
