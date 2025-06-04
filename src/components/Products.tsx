@@ -8,7 +8,7 @@ const Products = () => {
       title: "Продукция из мяса птицы",
       description: "Свежие части тушки цыплят-бройлеров и филейная продукция",
       image:
-        "https://images.unsplash.com/photo-1518492104633-130d0cc84637?w=400&h=300&fit=crop&auto=format",
+        "https://images.unsplash.com/photo-1548247416-ec66f4900b2e?w=400&h=300&fit=crop&auto=format",
       products: [
         "Цыпленок-бройлер целый (13кг)",
         "Бедро с хребтом (5/10кг)",
@@ -24,7 +24,7 @@ const Products = () => {
       title: "Фарш и полуфабрикаты из птицы",
       description: "Готовые к приготовлению изделия из мяса цыплят-бройлеров",
       image:
-        "https://images.unsplash.com/photo-1606909924998-93d5bbaa9b73?w=400&h=300&fit=crop&auto=format",
+        "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=300&fit=crop&auto=format",
       products: [
         "Фарш «Популярный» из бедра",
         "Фарш «Премиум» из филе",
@@ -41,7 +41,7 @@ const Products = () => {
       title: "Продукция из свинины",
       description: "Отрубы и полуфабрикаты из свинины высшего качества",
       image:
-        "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=400&h=300&fit=crop&auto=format",
+        "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=400&h=300&fit=crop&auto=format",
       products: [
         "Вырезка категория А",
         "Карбонат бескостный",
@@ -57,7 +57,7 @@ const Products = () => {
       title: "Варено-копченая продукция",
       description: "Деликатесы варено-копченого приготовления «Дарина»",
       image:
-        "https://images.unsplash.com/photo-1544985361-b420d7a77043?w=400&h=300&fit=crop&auto=format",
+        "https://images.unsplash.com/photo-1577303935007-0d306ee638cf?w=400&h=300&fit=crop&auto=format",
       products: [
         "Бедро ЦБ в/у кв. с пряностями",
         "Грудка ЦБ в/у кв.",
