@@ -8,7 +8,7 @@ const Products = () => {
       title: "Продукция из мяса птицы",
       description: "Свежие части тушки цыплят-бройлеров и филейная продукция",
       image:
-        "https://images.unsplash.com/photo-1548247416-ec66f4900b2e?w=400&h=300&fit=crop&auto=format",
+        "https://cdn.poehali.dev/files/f2c7db8d-1886-4b1b-abdc-f106cc7534b1.png",
       products: [
         "Цыпленок-бройлер целый (13кг)",
         "Бедро с хребтом (5/10кг)",
