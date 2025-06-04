@@ -52,7 +52,7 @@ const Hero = () => {
           <div className="relative">
             <div className="aspect-square bg-white rounded-2xl shadow-2xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=600&h=600&fit=crop&auto=format"
+                src="https://cdn.poehali.dev/files/3f83dba5-86c4-435c-a85a-d2979e315819.png"
                 alt="Качественные мясные продукты"
                 className="w-full h-full object-cover"
               />
