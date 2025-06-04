@@ -166,6 +166,18 @@ const ProductCatalog = () => {
                 Скачать каталог продукции
               </Button>
 
+              <div className="flex flex-col sm:flex-row gap-3 justify-center mt-4">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="text-lg px-8 py-3"
+                  onClick={() => window.open("tel:89519107980", "_self")}
+                >
+                  <Icon name="Phone" size={20} className="mr-2" />
+                  Связаться
+                </Button>
+              </div>
+
               <p className="text-sm text-gray-500 mt-4">
                 PDF-файл, размер: ~2 МБ • Обновлен: декабрь 2024
               </p>
