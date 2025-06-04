@@ -86,7 +86,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Icon name="MapPin" size={16} />
-                <span>г. Волгоград</span>
+                <span>г. Бор, Нижегородская обл.</span>
               </div>
             </div>
           </div>
