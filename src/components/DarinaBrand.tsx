@@ -79,13 +79,15 @@ const DarinaBrand = () => {
               ))}
             </div>
 
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700"
-            >
-              <Icon name="Sparkles" size={20} />
-              Узнать больше о бренде
-            </Button>
+            <div className="flex gap-4">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700"
+              >
+                <Icon name="Sparkles" size={20} />
+                Узнать больше о бренде
+              </Button>
+            </div>
           </div>
 
           <div className="relative">
