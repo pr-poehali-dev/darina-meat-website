@@ -70,6 +70,11 @@ const ProductCatalog = () => {
                       alt: "Каталог Дарина - Страница 6: Котлеты и полуфабрикаты",
                       page: 6,
                     },
+                    {
+                      url: "https://cdn.poehali.dev/files/af04a2fc-a451-4608-89ac-4a1a601a8885.png",
+                      alt: "Каталог Дарина - Страница 7: Свежее мясо и стейки",
+                      page: 7,
+                    },
                   ].map((image, index) => (
                     <div key={index} className="relative group cursor-pointer">
                       <div className="relative rounded-lg overflow-hidden shadow-md border hover:shadow-xl transition-all duration-300 transform hover:scale-105">
