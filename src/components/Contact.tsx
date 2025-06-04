@@ -24,9 +24,9 @@ const Contact = () => {
     },
     {
       icon: "MessageCircle",
-      title: "Telegram бот",
-      content: "https://t.me/Amedy_bot",
-      detail: "Быстрые ответы на вопросы",
+      title: "Telegram",
+      content: "https://t.me/K_Elena_nn",
+      detail: "Связь с руководителем",
     },
     {
       icon: "Clock",
@@ -137,24 +137,27 @@ const Contact = () => {
                       className="text-blue-600"
                     />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">
-                    Telegram бот
-                  </h3>
+                  <h3 className="text-2xl font-bold text-gray-900">Telegram</h3>
                   <p className="text-gray-700">
-                    Отсканируйте QR-код для быстрого доступа к боту
+                    Отсканируйте QR-код для связи с руководителем
                   </p>
                   <div className="bg-white p-4 rounded-lg shadow-inner">
                     <img
-                      src="https://cdn.poehali.dev/files/dfbe0982-bc15-4e76-b3d6-933b9f584950.png"
-                      alt="QR-код Telegram бота @AMEDY_BOT"
+                      src="https://cdn.poehali.dev/files/7abc8a4f-6361-4aaf-97ee-b84c2cea6b07.png"
+                      alt="QR-код Telegram @K_Elena_nn"
                       className="w-48 h-48 mx-auto"
                     />
                   </div>
-                  <p className="text-sm font-semibold text-blue-600">
-                    @AMEDY_BOT
-                  </p>
+                  <a
+                    href="https://t.me/K_Elena_nn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors"
+                  >
+                    @K_Elena_nn
+                  </a>
                   <p className="text-sm text-gray-500">
-                    Быстрые ответы на ваши вопросы
+                    Прямая связь с руководителем
                   </p>
                 </div>
               </CardContent>
