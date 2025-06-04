@@ -24,7 +24,7 @@ const Products = () => {
       title: "Фарш и полуфабрикаты из птицы",
       description: "Готовые к приготовлению изделия из мяса цыплят-бройлеров",
       image:
-        "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=300&fit=crop&auto=format",
+        "https://cdn.poehali.dev/files/05099d77-69e7-41de-9e05-f514b7f8d83a.png",
       products: [
         "Фарш «Популярный» из бедра",
         "Фарш «Премиум» из филе",
