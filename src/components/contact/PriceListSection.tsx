@@ -20,9 +20,11 @@ const PriceListSection = () => {
             className="bg-green-600 hover:bg-green-700 text-white px-8 py-3"
             size="lg"
             onClick={() => {
+              // Создаем временную ссылку для скачивания
               const link = document.createElement("a");
               link.href = "/price-list-2024.pdf";
               link.download = "price-list-2024.pdf";
+              link.target = "_blank";
               document.body.appendChild(link);
               link.click();
               document.body.removeChild(link);
