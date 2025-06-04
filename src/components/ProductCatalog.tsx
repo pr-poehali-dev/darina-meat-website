@@ -31,23 +31,71 @@ const ProductCatalog = () => {
             </CardHeader>
 
             <CardContent className="text-center">
-              {/* Превью каталога */}
+              {/* Галерея страниц каталога */}
               <div className="mb-8">
-                <h3 className="text-lg font-semibold mb-4 text-gray-800">
-                  Превью каталога
+                <h3 className="text-lg font-semibold mb-6 text-gray-800">
+                  Страницы каталога продукции
                 </h3>
-                <div className="relative max-w-md mx-auto rounded-lg overflow-hidden shadow-lg border">
-                  <img
-                    src="https://cdn.poehali.dev/files/fa8302e8-45e1-4ca1-8941-907077884e98.jpg"
-                    alt="Превью каталога продукции Дарина - курица со специями"
-                    className="w-full h-auto object-cover"
-                  />
-                  <div className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded-full px-2 py-1 text-xs font-medium text-gray-700">
-                    стр. 1
-                  </div>
+
+                {/* Сетка изображений каталога */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto mb-6">
+                  {[
+                    {
+                      url: "https://cdn.poehali.dev/files/fa8302e8-45e1-4ca1-8941-907077884e98.jpg",
+                      alt: "Каталог Дарина - Страница 1: Курица со специями",
+                      page: 1,
+                    },
+                    {
+                      url: "https://cdn.poehali.dev/files/ef8c1167-202a-48a7-b7ad-98f91baf2184.png",
+                      alt: "Каталог Дарина - Страница 2: Полуфабрикаты из курицы",
+                      page: 2,
+                    },
+                    {
+                      url: "https://cdn.poehali.dev/files/64a704e2-6dd4-4a73-88cc-55c7446a84e3.png",
+                      alt: "Каталог Дарина - Страница 3: Мясные изделия",
+                      page: 3,
+                    },
+                    {
+                      url: "https://cdn.poehali.dev/files/9e4dc962-04b7-4118-b218-a9aafcff9bf0.png",
+                      alt: "Каталог Дарина - Страница 4: Колбасные изделия",
+                      page: 4,
+                    },
+                    {
+                      url: "https://cdn.poehali.dev/files/ffe621b9-5f97-48a9-ad4e-9618469decc5.png",
+                      alt: "Каталог Дарина - Страница 5: Деликатесы",
+                      page: 5,
+                    },
+                    {
+                      url: "https://cdn.poehali.dev/files/5f6ffac6-516d-4a22-b325-d200fc4f6e48.png",
+                      alt: "Каталог Дарина - Страница 6: Котлеты и полуфабрикаты",
+                      page: 6,
+                    },
+                  ].map((image, index) => (
+                    <div key={index} className="relative group cursor-pointer">
+                      <div className="relative rounded-lg overflow-hidden shadow-md border hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                        <img
+                          src={image.url}
+                          alt={image.alt}
+                          className="w-full h-auto object-contain bg-white"
+                          onClick={() => window.open(image.url, "_blank")}
+                        />
+                        <div className="absolute top-2 right-2 bg-primary text-white rounded-full px-2 py-1 text-xs font-medium">
+                          стр. {image.page}
+                        </div>
+                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
+                          <Icon
+                            name="Expand"
+                            size={24}
+                            className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-                <p className="text-sm text-gray-500 mt-2">
-                  Пример страницы из каталога
+
+                <p className="text-sm text-gray-500 mb-4">
+                  Нажмите на изображение для просмотра в полном размере
                 </p>
               </div>
 
