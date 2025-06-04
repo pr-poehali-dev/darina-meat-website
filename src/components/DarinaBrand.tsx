@@ -122,7 +122,7 @@ const DarinaBrand = () => {
           </div>
         </div>
 
-        <div className="mt-16 space-y-8">
+        <div className="mt-16">
           <div className="bg-white rounded-2xl p-8 shadow-lg">
             <div className="text-center space-y-6">
               <h3 className="text-2xl font-bold text-gray-900">
@@ -144,6 +144,7 @@ const DarinaBrand = () => {
               </div>
             </div>
           </div>
+        </div>
 
           <div className="bg-white rounded-2xl p-8 shadow-lg">
             <div className="space-y-8">
