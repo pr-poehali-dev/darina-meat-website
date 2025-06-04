@@ -127,6 +127,39 @@ const Contact = () => {
           </Card>
 
           <div className="space-y-8">
+            <Card className="bg-gradient-to-br from-blue-50 to-purple-50 border-0">
+              <CardContent className="p-8">
+                <div className="text-center space-y-4">
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
+                    <Icon
+                      name="MessageCircle"
+                      size={32}
+                      className="text-blue-600"
+                    />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    Telegram бот
+                  </h3>
+                  <p className="text-gray-700">
+                    Отсканируйте QR-код для быстрого доступа к боту
+                  </p>
+                  <div className="bg-white p-4 rounded-lg shadow-inner">
+                    <img
+                      src="https://cdn.poehali.dev/files/dfbe0982-bc15-4e76-b3d6-933b9f584950.png"
+                      alt="QR-код Telegram бота @AMEDY_BOT"
+                      className="w-48 h-48 mx-auto"
+                    />
+                  </div>
+                  <p className="text-sm font-semibold text-blue-600">
+                    @AMEDY_BOT
+                  </p>
+                  <p className="text-sm text-gray-500">
+                    Быстрые ответы на ваши вопросы
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
             <Card className="bg-gradient-to-br from-green-50 to-emerald-50 border-0">
               <CardContent className="p-8">
                 <div className="text-center space-y-4">
