@@ -121,6 +121,36 @@ const Contact = () => {
           </Card>
 
           <div className="space-y-8">
+            <Card className="bg-gradient-to-br from-green-50 to-emerald-50 border-0">
+              <CardContent className="p-8">
+                <div className="text-center space-y-4">
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
+                    <Icon
+                      name="Download"
+                      size={32}
+                      className="text-green-600"
+                    />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    Скачать прайс-лист
+                  </h3>
+                  <p className="text-gray-700">
+                    Актуальный прайс-лист с ценами на всю нашу продукцию
+                  </p>
+                  <Button
+                    className="bg-green-600 hover:bg-green-700 text-white px-8 py-3"
+                    size="lg"
+                  >
+                    <Icon name="FileDown" size={20} />
+                    Скачать прайс (.pdf)
+                  </Button>
+                  <p className="text-sm text-gray-500">
+                    Последнее обновление: декабрь 2024
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
             <Card className="bg-gradient-to-br from-red-50 to-orange-50 border-0">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
