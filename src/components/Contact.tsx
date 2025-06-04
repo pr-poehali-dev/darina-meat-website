@@ -4,6 +4,7 @@ import TelegramSection from "@/components/contact/TelegramSection";
 import PriceListSection from "@/components/contact/PriceListSection";
 import PartnershipSection from "@/components/contact/PartnershipSection";
 import SocialSection from "@/components/contact/SocialSection";
+import DeliverySchedule from "@/components/contact/DeliverySchedule";
 
 const Contact = () => {
   const contactInfo = [
@@ -50,6 +51,10 @@ const Contact = () => {
         </div>
 
         <ContactInfo contactInfo={contactInfo} />
+
+        <div className="mb-12">
+          <DeliverySchedule />
+        </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           <ContactForm />
