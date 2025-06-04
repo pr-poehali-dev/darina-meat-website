@@ -146,6 +146,7 @@ const DarinaBrand = () => {
           </div>
         </div>
 
+        <div className="mt-16">
           <div className="bg-white rounded-2xl p-8 shadow-lg">
             <div className="space-y-8">
               <div className="text-center">
