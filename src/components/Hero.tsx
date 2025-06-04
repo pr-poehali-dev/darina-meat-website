@@ -35,12 +35,12 @@ const Hero = () => {
 
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-red-600">29+</div>
+                <div className="text-3xl font-bold text-red-600">20+</div>
                 <div className="text-sm text-gray-600">лет на рынке</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-red-600">500+</div>
-                <div className="text-sm text-gray-600">видов продукции</div>
+                <div className="text-3xl font-bold text-red-600">1995</div>
+                <div className="text-sm text-gray-600">год основания</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-red-600">100%</div>
@@ -59,7 +59,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-red-600/20 to-transparent"></div>
             </div>
             <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-orange-400 rounded-full flex items-center justify-center shadow-lg">
-              <Icon name="Award" size={32} className="text-white" />
+              <Icon name="Factory" size={32} className="text-white" />
             </div>
           </div>
         </div>
