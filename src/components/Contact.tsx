@@ -23,6 +23,12 @@ const Contact = () => {
       detail: "",
     },
     {
+      icon: "MessageCircle",
+      title: "Telegram бот",
+      content: "t.me/Amedy_bot",
+      detail: "Быстрые ответы на вопросы",
+    },
+    {
       icon: "Clock",
       title: "Режим работы",
       content: "Пн-Пт: 9:00 - 17:00",
