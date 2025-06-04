@@ -4,7 +4,6 @@ import TelegramSection from "@/components/contact/TelegramSection";
 import PriceListSection from "@/components/contact/PriceListSection";
 import PartnershipSection from "@/components/contact/PartnershipSection";
 import SocialSection from "@/components/contact/SocialSection";
-import DeliverySchedule from "@/components/delivery/DeliverySchedule";
 
 const Contact = () => {
   const contactInfo = [
@@ -41,36 +40,29 @@ const Contact = () => {
   ];
 
   return (
-    <>
-      <section id="contact" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="text-4xl font-bold text-gray-900">
-              Свяжитесь с нами
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Мы всегда готовы ответить на ваши вопросы и обсудить
-              сотрудничество
-            </p>
-          </div>
+    <section id="contact" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center space-y-4 mb-16">
+          <h2 className="text-4xl font-bold text-gray-900">Свяжитесь с нами</h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Мы всегда готовы ответить на ваши вопросы и обсудить сотрудничество
+          </p>
+        </div>
 
-          <ContactInfo contactInfo={contactInfo} />
+        <ContactInfo contactInfo={contactInfo} />
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            <ContactForm />
+        <div className="grid lg:grid-cols-2 gap-12">
+          <ContactForm />
 
-            <div className="space-y-8">
-              <TelegramSection />
-              <PriceListSection />
-              <PartnershipSection />
-              <SocialSection />
-            </div>
+          <div className="space-y-8">
+            <TelegramSection />
+            <PriceListSection />
+            <PartnershipSection />
+            <SocialSection />
           </div>
         </div>
-      </section>
-
-      <DeliverySchedule />
-    </>
+      </div>
+    </section>
   );
 };
 
