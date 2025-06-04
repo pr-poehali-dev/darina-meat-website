@@ -115,7 +115,7 @@ const DarinaBrand = () => {
 
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-r from-orange-400 to-red-500 rounded-full flex items-center justify-center shadow-xl">
               <div className="text-center text-white">
-                <div className="text-2xl font-bold">29+</div>
+                <div className="text-2xl font-bold">20+</div>
                 <div className="text-xs">лет качества</div>
               </div>
             </div>
