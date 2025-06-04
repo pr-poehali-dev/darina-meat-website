@@ -31,6 +31,26 @@ const ProductCatalog = () => {
             </CardHeader>
 
             <CardContent className="text-center">
+              {/* Превью каталога */}
+              <div className="mb-8">
+                <h3 className="text-lg font-semibold mb-4 text-gray-800">
+                  Превью каталога
+                </h3>
+                <div className="relative max-w-md mx-auto rounded-lg overflow-hidden shadow-lg border">
+                  <img
+                    src="https://cdn.poehali.dev/files/fa8302e8-45e1-4ca1-8941-907077884e98.jpg"
+                    alt="Превью каталога продукции Дарина - курица со специями"
+                    className="w-full h-auto object-cover"
+                  />
+                  <div className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded-full px-2 py-1 text-xs font-medium text-gray-700">
+                    стр. 1
+                  </div>
+                </div>
+                <p className="text-sm text-gray-500 mt-2">
+                  Пример страницы из каталога
+                </p>
+              </div>
+
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="flex flex-col items-center">
                   <Icon
