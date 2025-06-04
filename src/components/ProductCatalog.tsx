@@ -75,6 +75,26 @@ const ProductCatalog = () => {
                       alt: "Каталог Дарина - Страница 7: Свежее мясо и стейки",
                       page: 7,
                     },
+                    {
+                      url: "https://cdn.poehali.dev/files/636392fb-cfbd-4e4f-b2a3-07921793a3e7.png",
+                      alt: "Каталог Дарина - Страница 8: Дополнительный ассортимент",
+                      page: 8,
+                    },
+                    {
+                      url: "https://cdn.poehali.dev/files/1845f1ef-e7f8-4922-8b71-590336c97bee.png",
+                      alt: "Каталог Дарина - Страница 9: Специальные предложения",
+                      page: 9,
+                    },
+                    {
+                      url: "https://cdn.poehali.dev/files/850461f9-7962-4816-8e3e-ec83db075a12.png",
+                      alt: "Каталог Дарина - Страница 10: Премиум продукция",
+                      page: 10,
+                    },
+                    {
+                      url: "https://cdn.poehali.dev/files/7ce93ea9-16ac-4cde-b722-b79883943ae9.png",
+                      alt: "Каталог Дарина - Страница 11: Новинки ассортимента",
+                      page: 11,
+                    },
                   ].map((image, index) => (
                     <div key={index} className="relative group cursor-pointer">
                       <div className="relative rounded-lg overflow-hidden shadow-md border hover:shadow-xl transition-all duration-300 transform hover:scale-105">
