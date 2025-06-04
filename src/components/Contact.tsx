@@ -26,7 +26,7 @@ const Contact = () => {
       icon: "MessageCircle",
       title: "Telegram",
       content: "https://t.me/K_Elena_nn",
-      detail: "Связь с руководителем",
+      detail: "Связь с менеджером по продажам",
     },
     {
       icon: "Clock",
@@ -139,7 +139,7 @@ const Contact = () => {
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900">Telegram</h3>
                   <p className="text-gray-700">
-                    Отсканируйте QR-код для связи с руководителем
+                    Отсканируйте QR-код для связи с менеджером по продажам
                   </p>
                   <div className="bg-white p-4 rounded-lg shadow-inner">
                     <img
@@ -157,7 +157,7 @@ const Contact = () => {
                     @K_Elena_nn
                   </a>
                   <p className="text-sm text-gray-500">
-                    Прямая связь с руководителем
+                    Прямая связь с менеджером по продажам
                   </p>
                 </div>
               </CardContent>
