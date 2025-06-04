@@ -334,99 +334,127 @@ const DarinaBrand = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                city: "Москва",
-                day: "Понедельник",
-                time: "08:00 - 10:00",
+                city: "Москва и область",
+                days: ["Понедельник", "Четверг"],
+                time: "08:00 - 12:00",
                 color: "blue",
+                routes: ["МКАД", "Подольск", "Химки"],
               },
               {
                 city: "Санкт-Петербург",
-                day: "Понедельник",
-                time: "14:00 - 16:00",
+                days: ["Вторник", "Пятница"],
+                time: "09:00 - 13:00",
                 color: "green",
+                routes: ["Центр", "Васильевский о.", "Петроградка"],
               },
               {
                 city: "Нижний Новгород",
-                day: "Вторник",
-                time: "09:00 - 11:00",
+                days: ["Среда"],
+                time: "10:00 - 14:00",
                 color: "purple",
+                routes: ["Автозавод", "Сормово", "Канавино"],
               },
               {
                 city: "Казань",
-                day: "Вторник",
-                time: "13:00 - 15:00",
+                days: ["Понедельник"],
+                time: "11:00 - 15:00",
                 color: "orange",
+                routes: ["Вахитовский", "Советский", "Приволжский"],
               },
               {
                 city: "Воронеж",
-                day: "Среда",
-                time: "08:30 - 10:30",
+                days: ["Четверг"],
+                time: "08:30 - 12:30",
                 color: "red",
+                routes: ["Центр", "Левобережный", "Железнодорожный"],
               },
               {
                 city: "Ростов-на-Дону",
-                day: "Среда",
-                time: "15:00 - 17:00",
+                days: ["Вторник"],
+                time: "09:30 - 13:30",
                 color: "indigo",
+                routes: ["Ленинский", "Октябрьский", "Пролетарский"],
               },
               {
                 city: "Екатеринбург",
-                day: "Четверг",
-                time: "09:00 - 11:00",
+                days: ["Среда"],
+                time: "08:00 - 12:00",
                 color: "pink",
+                routes: ["Центр", "Верх-Исетский", "Чкаловский"],
               },
               {
                 city: "Самара",
-                day: "Четверг",
-                time: "14:00 - 16:00",
+                days: ["Пятница"],
+                time: "10:00 - 14:00",
                 color: "teal",
-              },
-              {
-                city: "Краснодар",
-                day: "Пятница",
-                time: "08:00 - 10:00",
-                color: "yellow",
+                routes: ["Ленинский", "Октябрьский", "Советский"],
               },
             ].map((delivery, index) => (
               <div
                 key={index}
                 className={`p-6 rounded-lg border-l-4 border-${delivery.color}-500 bg-${delivery.color}-50 hover:shadow-md transition-shadow`}
               >
-                <div className="flex items-center justify-between mb-3">
-                  <h4 className="font-bold text-gray-900">{delivery.city}</h4>
+                <div className="flex items-center justify-between mb-4">
+                  <h4 className="font-bold text-gray-900 text-lg">
+                    {delivery.city}
+                  </h4>
                   <div
-                    className={`w-3 h-3 rounded-full bg-${delivery.color}-500`}
+                    className={`w-4 h-4 rounded-full bg-${delivery.color}-500`}
                   ></div>
                 </div>
-                <div className="space-y-2 text-sm">
-                  <div className="flex items-center space-x-2">
-                    <Icon
-                      name="Calendar"
-                      size={14}
-                      className={`text-${delivery.color}-600`}
-                    />
-                    <span className="font-medium text-gray-700">
-                      {delivery.day}
-                    </span>
+
+                <div className="space-y-3">
+                  <div className="space-y-2">
+                    <div className="flex items-center space-x-2">
+                      <Icon
+                        name="Calendar"
+                        size={16}
+                        className={`text-${delivery.color}-600`}
+                      />
+                      <span className="font-semibold text-gray-700">
+                        Дни поставок:
+                      </span>
+                    </div>
+                    <div className="pl-6">
+                      {delivery.days.map((day, dayIndex) => (
+                        <div
+                          key={dayIndex}
+                          className={`inline-block bg-${delivery.color}-100 text-${delivery.color}-800 px-2 py-1 rounded text-xs font-medium mr-2 mb-1`}
+                        >
+                          {day}
+                        </div>
+                      ))}
+                    </div>
                   </div>
+
                   <div className="flex items-center space-x-2">
                     <Icon
                       name="Clock"
-                      size={14}
+                      size={16}
                       className={`text-${delivery.color}-600`}
                     />
-                    <span className="text-gray-600">{delivery.time}</span>
+                    <span className="text-gray-600 font-medium">
+                      {delivery.time}
+                    </span>
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <Icon
-                      name="Truck"
-                      size={14}
-                      className={`text-${delivery.color}-600`}
-                    />
-                    <span className="text-gray-600">Регулярная доставка</span>
+
+                  <div className="space-y-2">
+                    <div className="flex items-center space-x-2">
+                      <Icon
+                        name="MapPin"
+                        size={16}
+                        className={`text-${delivery.color}-600`}
+                      />
+                      <span className="font-semibold text-gray-700">
+                        Районы:
+                      </span>
+                    </div>
+                    <div className="pl-6 text-sm text-gray-600">
+                      {delivery.routes.join(" • ")}
+                    </div>
                   </div>
                 </div>
               </div>
